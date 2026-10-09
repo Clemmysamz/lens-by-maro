@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --brand-ivory: #f7f5f0;
+  --brand-text: #171717;
+  --brand-charcoal: #171717;
+  --brand-gold: #b69a68;
+  --brand-muted: #77736d;
+  --brand-border: rgba(23, 23, 23, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--brand-ivory);
+  color: var(--brand-text);
+  font-family: var(--font-sans), sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif), serif;
+  letter-spacing: -0.04em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.gold-button {
+  @apply inline-flex items-center justify-center rounded-full bg-[#171717] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#2d2d2d];
+}
+
+.ghost-button {
+  @apply inline-flex items-center justify-center rounded-full border border-[#D9D2C8] bg-transparent px-6 py-3 text-sm font-medium text-[#171717] transition hover:border-[#B69A68];
+}
+
+.card-shell {
+  @apply overflow-hidden rounded-[30px] border border-[#E6DFC9] bg-white shadow-[0_20px_60px_rgba(23,23,23,0.06)];
+}
